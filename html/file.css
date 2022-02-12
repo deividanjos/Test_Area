@@ -1,0 +1,8 @@
+*{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body .cabeçalho #name{
+    justify-content: center;
+}

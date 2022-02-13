@@ -6,14 +6,17 @@ import PySimpleGUI as sg
 
 
 # Tema 
-sg.theme("DarkAmber")
+sg.theme("Black")
 
 # Todas as coisas que vão aparecer na janela!
-layout = [ [sg.Text("1. Senha só com números.")],
+layout = [ [sg.Text("-=-" * 20)],
+           [sg.Text("1. Senha só com números.")],
            [sg.Text("2. Senha com números e letras.")],
            [sg.Text("3. Senha com números, letras e caracteres especiais.")],
            [sg.Text("4. Senha só com letras.")],
-           [sg.Text("5. Senha com letras é caracteres especiais.\n")],
+           [sg.Text("5. Senha com letras é caracteres especiais.")],
+           [sg.Text("-=-" * 20)],
+           [sg.Text("\n")],
            [sg.Text("Escolha o que você deseja: "), sg.Input()],
            [sg.Text("Qual a Quantidade de caracteres: "), sg.Input()],
            [sg.Button("Ok"), sg.Button("Cancel")] ]
@@ -33,6 +36,11 @@ while True:
         senha = digits + ascii_letters
     elif int(values[0]) == 3:
         senha = digits + ascii_letters + punctuation
+    elif int(values[0]) == 4:
+        senha = ascii_letters
+    elif int(values[0]) == 5:
+        senha = ascii_letters + punctuation
+
     # gerador de senha 
     secure_random = random.SystemRandom()
     password = "".join(secure_random.choice(senha)

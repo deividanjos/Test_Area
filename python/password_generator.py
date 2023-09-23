@@ -22,7 +22,7 @@ layout = [ [sg.Text("-=-" * 20)],
            [sg.Button("Ok"), sg.Button("Cancel")] ]
 
 # Criando a Janela
-window = sg.Window("Gerador de Sanhas", layout)
+window = sg.Window("Gerador de Senhas", layout)
 
 # Event Loop para processar "eventos" e obter os "valores" das entradas.
 while True:

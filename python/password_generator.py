@@ -9,7 +9,7 @@ import PySimpleGUI as sg
 sg.theme("Black")
 
 # Todas as coisas que vão aparecer na janela!
-layout = [ [sg.Text("-=-" * 20)],
+layout = [[sg.Text("-=-" * 20)],
            [sg.Text("1. Senha só com números.")],
            [sg.Text("2. Senha com números e letras.")],
            [sg.Text("3. Senha com números, letras e caracteres especiais.")],
@@ -19,12 +19,13 @@ layout = [ [sg.Text("-=-" * 20)],
            [sg.Text("\n")],
            [sg.Text("Escolha o que você deseja: "), sg.Input()],
            [sg.Text("Qual a Quantidade de caracteres: "), sg.Input()],
-           [sg.Button("Ok"), sg.Button("Cancel")] ]
+           [sg.Button("Ok"), sg.Button("Cancel")]]
 
 # Criando a Janela
 window = sg.Window("Gerador de Senhas", layout)
 
 # Event Loop para processar "eventos" e obter os "valores" das entradas.
+senha = ''
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == "Cancel":

@@ -1,4 +1,4 @@
-#!/home/anjos/PycharmProjects/Test_Area/env/bin/python3
+#!/home/anjos/PycharmProjects/Test_Area/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

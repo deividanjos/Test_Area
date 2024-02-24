@@ -4,8 +4,7 @@ from string import ascii_letters
 from string import punctuation
 import PySimpleGUI as sg
 
-
-# Tema 
+# Tema
 sg.theme("Black")
 
 # Todas as coisas que vão aparecer na janela!
@@ -45,7 +44,7 @@ while True:
     # gerador de senha 
     secure_random = random.SystemRandom()
     password = "".join(secure_random.choice(senha)
-                      for i in range(int(values[1])))
+                       for i in range(int(values[1])))
 
     sg.Print("Sua Senha é: ", password, size=[50, 10])
 

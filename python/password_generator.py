@@ -47,6 +47,6 @@ while True:
     password = "".join(secure_random.choice(senha)
                       for i in range(int(values[1])))
 
-    sg.Print("Sua Senha é: ", password)
+    sg.Print("Sua Senha é: ", password, size=[50, 10])
 
 window.close()

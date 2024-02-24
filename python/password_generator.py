@@ -10,16 +10,16 @@ sg.theme("Black")
 
 # Todas as coisas que vão aparecer na janela!
 layout = [[sg.Text("-=-" * 20)],
-           [sg.Text("1. Senha só com números.")],
-           [sg.Text("2. Senha com números e letras.")],
-           [sg.Text("3. Senha com números, letras e caracteres especiais.")],
-           [sg.Text("4. Senha só com letras.")],
-           [sg.Text("5. Senha com letras é caracteres especiais.")],
-           [sg.Text("-=-" * 20)],
-           [sg.Text("\n")],
-           [sg.Text("Escolha o que você deseja: "), sg.Input()],
-           [sg.Text("Qual a Quantidade de caracteres: "), sg.Input()],
-           [sg.Button("Ok"), sg.Button("Cancel")]]
+          [sg.Text("1. Senha só com números.")],
+          [sg.Text("2. Senha com números e letras.")],
+          [sg.Text("3. Senha com números, letras e caracteres especiais.")],
+          [sg.Text("4. Senha só com letras.")],
+          [sg.Text("5. Senha com letras é caracteres especiais.")],
+          [sg.Text("-=-" * 20)],
+          [sg.Text("\n")],
+          [sg.Text("Escolha o que você deseja: "), sg.Input()],
+          [sg.Text("Qual a Quantidade de caracteres: "), sg.Input()],
+          [sg.Button("Ok"), sg.Button("Cancel")]]
 
 # Criando a Janela
 window = sg.Window("Gerador de Senhas", layout)
